@@ -137,7 +137,7 @@ void update(sycl::queue &q,
 
 static void usage(const char *pname) {
 
-  const char *bname = strrchr(pname, '/');
+  const char *bname = std::strrchr(pname, '/');
   if (!bname) {bname = pname;}
   else        {bname++;}
 
